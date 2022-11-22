@@ -6,19 +6,19 @@ def cli():
 
 @cli.command(name='gen')
 def generic():
-    click.echo('Hello there')
+    click.secho('Hello there',fg="red", bold=True)
 
 @cli.command(name='morning')
 def morning():
-    click.echo('Ndi na mi')
+    click.secho('Ndi na mi',fg="green", bold=True)
 
 @cli.command(name='afternoon')
 def afternoon():
-    click.echo('Nd) na mi')
+    click.secho('Nd) na mi',fg="blue", bold=True)
 
 @cli.command(name='evening')
 def evening():
-    click.echo('Fi3yi na mi')
+    click.secho('Fi3yi na mi')
 
 if __name__ == '__main__':
     cli()
